@@ -1,0 +1,6 @@
+# This is Git's per-user configuration file.
+[user]
+	name = Jose Gisbert
+	email = jisbert@users.noreply.github.com
+[alias]
+	lg = log --all --graph '--pretty=%C(auto)%h %d %<(75,trunc)%s'
