@@ -3,4 +3,13 @@
 	name = Jose Gisbert
 	email = jisbert@users.noreply.github.com
 [alias]
-	lg = log --all --graph '--pretty=%C(auto)%h %d %<(75,trunc)%s'
+	# Show current aliases
+	aliases = "!git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | grep -v ^'alias '"
+	# View history graph
+	l = log --all --graph --oneline
+	# View status using the short format
+	s = status -s
+	# Show tags, branches and remotes
+	tags = tag -l
+	branches = branch -a
+	remotes = remote -vj
