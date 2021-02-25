@@ -19,5 +19,8 @@
 - [Cliente de email](https://www.spikenow.com/), converger a Gmail y dejar de utilizar este cliente
 - [7-zip](https://www.7-zip.org/), hay otra versión que soporta otros protocolos de compresión
 
+# Menú inicio
+![menú inicio](start_menu.webp)
+
 # Solo para mi máquina actual
 - [Centro de comando de gráficos de Intel](https://www.microsoft.com/store/productId/9PLFNLNT3G5G)
