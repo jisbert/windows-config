@@ -8,7 +8,7 @@ ${Function:.....} = { Set-Location ..\..\..\.. }
 ${Function:......} = { Set-Location ..\..\..\..\.. }
 
 # Navigation Shortcuts
-${Function:gh} = { Set-Location D:\Jose\GitHub }
+${Function:gh} = { Set-Location D:\GitHub }
 ${Function:dt} = { Set-Location ~\Desktop }
 ${Function:docs} = { Set-Location ~\Documents }
 ${Function:dl} = { Set-Location ~\Downloads }
