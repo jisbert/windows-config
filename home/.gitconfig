@@ -13,3 +13,5 @@
 	tags = tag -l
 	branches = branch -a
 	remotes = remote -vj
+[core]
+	sshCommand = C:\\\\Windows\\\\System32\\\\OpenSSH\\\\ssh.exe
