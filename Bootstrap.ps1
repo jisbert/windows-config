@@ -10,11 +10,11 @@ function Resolve-RelativeToTargetDirectory ($Path, $TargetDirectory) {
 function Add-SymbolicLinks ($SourceDirectory, $TargetDirectory) {
 	Push-Location -Path $SourceDirectory
 	Get-ChildItem -Recurse -File | `
-	ForEach-Object -Process {
-		$Target = $_
-		$Path = Resolve-RelativeToTargetDirectory -Path $_ -TargetDirectory $TargetDirectory
-		New-Item -Path $Path -ItemType SymbolicLink -Target $Target -Force -ErrorAction Continue
-	}
+		ForEach-Object -Process {
+			$Target = $_
+			$Path = Resolve-RelativeToTargetDirectory -Path $_ -TargetDirectory $TargetDirectory
+			New-Item -Path $Path -ItemType SymbolicLink -Target $Target -Force -ErrorAction Continue
+		}
 	Pop-Location
 }
 
