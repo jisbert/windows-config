@@ -38,3 +38,6 @@ Add-WindowsCapability -Online -Name Language.TextToSpeech~~~ca-ES~0.0.1.0
 Add-WindowsCapability -Online -Name Language.TextToSpeech~~~en-GB~0.0.1.0
 Add-WindowsCapability -Online -Name Language.TextToSpeech~~~es-ES~0.0.1.0
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+
+# Bluetooth connection with LG Soundbar
+Set-ItemProperty HKLM:\SYSTEM\ControlSet001\Control\Bluetooth\Audio\AVRCP\CT -Name DisableAbsoluteVolume -Value 1
