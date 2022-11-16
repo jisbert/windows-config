@@ -6,4 +6,4 @@
 	ForEach-Object -Process { . $_ }
 
 # Load oh-my-posh theme
-Set-PoshPrompt -Theme ~/.oh-my-posh.json
+oh-my-posh init pwsh --config ~/.oh-my-posh.json | Invoke-Expression
