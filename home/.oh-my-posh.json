@@ -46,7 +46,7 @@
           "type": "exit",
           "style": "plain",
           "foreground": "#C94A16",
-          "template": "x{{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} "
+          "template": "{{ if gt .Code 0 }}\uf00d{{ else }}\uf42e{{ end }} "
         }
       ]
     },
