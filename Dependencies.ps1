@@ -5,9 +5,9 @@ Write-Host "Updating Help..." -BackgroundColor "Yellow" -ForegroundColor "Black"
 Update-Help -Force -UICulture en-US
 Update-Help -Force
 
-# Install PowerShell Modules
-Write-Host "Installing PowerShell Modules..." -BackgroundColor "Yellow" -ForegroundColor "Black"
-Install-Module oh-my-posh -Scope CurrentUser -AllowPrerelease
+# Install Oh My Posh
+Write-Host "Installing Oh My Posh..." -BackgroundColor "Yellow" -ForegroundColor "Black"
+winget install JanDeDobbeleer.OhMyPosh -s winget
 
 # Install vim-plug for mingw64
 Write-Host "Installing vim plugin loader..." -BackgroundColor "Yellow" -ForegroundColor "Black"
