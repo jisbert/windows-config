@@ -10,14 +10,14 @@ Write-Host "Installing Oh My Posh..." -BackgroundColor "Yellow" -ForegroundColor
 winget install JanDeDobbeleer.OhMyPosh -s winget
 
 # Install vim-plug for mingw64
-Write-Host "Installing vim plugin loader..." -BackgroundColor "Yellow" -ForegroundColor "Black"
+Write-Host "Installing vim plugin loader for mingw64..." -BackgroundColor "Yellow" -ForegroundColor "Black"
 Invoke-WebRequest -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim | `
 	New-Item $HOME/.vim/autoload/plug.vim -Force
 
 # Windows Features
-Write-Host "Installing Windows Features..." -BackgroundColor "Yellow" -ForegroundColor "Black"
-Enable-WindowsOptionalFeature -Online -All -FeatureName `
-	'Microsoft-Windows-Subsystem-Linux' # `
+# Write-Host "Installing Windows Features..." -BackgroundColor "Yellow" -ForegroundColor "Black"
+# Enable-WindowsOptionalFeature -Online -All -FeatureName `
+	# 'Microsoft-Windows-Subsystem-Linux' # `
 	# 'Microsoft-Hyper-V-All', `
 	# 'Microsoft-Hyper-V-Tools-All' `
 	# 'Containers-DisposableClientVM' `
