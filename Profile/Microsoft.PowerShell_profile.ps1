@@ -7,3 +7,6 @@
 
 # Load oh-my-posh theme
 oh-my-posh init pwsh --config ~/.oh-my-posh.json | Invoke-Expression
+
+# Set prediction line view
+Set-PSReadLineOption -PredictionViewStyle ListView
