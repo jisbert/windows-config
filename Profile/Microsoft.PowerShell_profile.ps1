@@ -8,5 +8,5 @@
 # Load oh-my-posh theme
 oh-my-posh init pwsh --config ~/.oh-my-posh.json | Invoke-Expression
 
-# Set prediction line view
+# Return a list of matching statements from history when start typing
 Set-PSReadLineOption -PredictionViewStyle ListView
